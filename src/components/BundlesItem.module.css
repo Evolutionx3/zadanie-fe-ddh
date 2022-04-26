@@ -45,6 +45,7 @@ section {
 
 .desc {
   margin-bottom: 1rem;
+  color: #333333;
 }
 
 .link {
@@ -77,6 +78,21 @@ section {
 }
 
 .button__box {
-  width: 25%;
+  width: 35%;
   text-align: center;
+}
+
+.button__box p {
+  color: #05867e;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.button__box button {
+  border: 1px solid #05867e;
+  background-color: #05867e;
+  padding: 0.5rem 1.7rem;
+  border-radius: 6px;
+  color: white;
+  margin-top: 1rem;
 }
