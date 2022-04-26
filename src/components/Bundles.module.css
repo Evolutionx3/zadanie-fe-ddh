@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 4rem auto;
+  width: 80%;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header {
+  background-color: #05867e;
+  color: white;
+  padding: 0.8rem 0 0.8rem 1.5rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
