@@ -1,0 +1,7 @@
+.wrapper {
+  margin: 4rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

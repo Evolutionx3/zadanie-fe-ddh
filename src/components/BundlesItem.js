@@ -1,6 +1,6 @@
 import classes from "./BundlesItem.module.css";
 
-const BundlesItem = ({ item, clickHandler }) => {
+const BundlesItem = ({ item, clickHandler, setActive }) => {
   const { id, title, shortDesc, img, price } = item;
   return (
     <div className={classes["bundles"]}>
@@ -10,7 +10,9 @@ const BundlesItem = ({ item, clickHandler }) => {
       <div className={classes["details"]}>
         <p className={classes["title"]}>{title}</p>
         <p className={classes["desc"]}>{shortDesc}</p>
-        <p className={classes["link"]}>Zobacz więcej</p>
+        <p className={classes["link"]} onClick={() => setActive(id)}>
+          Zobacz więcej
+        </p>
       </div>
       <div className={classes["button__box"]}>
         <p>{price} ZŁ</p>

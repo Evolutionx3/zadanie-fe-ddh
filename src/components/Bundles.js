@@ -6,7 +6,7 @@ import classes from "./Bundles.module.css";
 
 import BundlesItem from "./BundlesItem";
 
-const Bundles = ({ clickHandler }) => {
+const Bundles = ({ clickHandler, setActive }) => {
   return (
     <div className={classes["wrapper"]}>
       <div className={classes["header"]}>Lista pakietów</div>
@@ -15,6 +15,7 @@ const Bundles = ({ clickHandler }) => {
           key={bundle.id}
           item={bundle}
           clickHandler={clickHandler}
+          setActive={setActive}
         />
       ))}
     </div>

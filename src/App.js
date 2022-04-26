@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Bundles from "./components/Bundles";
-import Cart from "./components/Cart";
 import CartModal from "./components/CartModal";
+import BundlePage from "./components/BundlePage";
+import bundles from "./Data";
 
 const App = () => {
   const [show, setShow] = useState(false);
+  const [active, setActive] = useState();
 
   const [cart, setCart] = useState([]);
   const clickHandler = (item) => {
@@ -27,10 +29,6 @@ const App = () => {
     setShow(null);
   };
 
-  // useEffect(() => {
-  //   console.log("Cart changed");
-  // }, [cart]);
-
   return (
     <React.Fragment>
       <Navbar setShow={setShow} />
@@ -42,7 +40,36 @@ const App = () => {
           onConfirm={closeHandler}
         />
       )}
-      <Bundles clickHandler={clickHandler} />
+
+      <Bundles clickHandler={clickHandler} setActive={setActive} />
+      {active === 1 && (
+        <BundlePage
+          clickHandler={clickHandler}
+          bundles={bundles}
+          cardIndex={1}
+        />
+      )}
+      {active === 2 && (
+        <BundlePage
+          clickHandler={clickHandler}
+          bundles={bundles}
+          cardIndex={2}
+        />
+      )}
+      {active === 3 && (
+        <BundlePage
+          clickHandler={clickHandler}
+          bundles={bundles}
+          cardIndex={3}
+        />
+      )}
+      {active === 4 && (
+        <BundlePage
+          clickHandler={clickHandler}
+          bundles={bundles}
+          cardIndex={4}
+        />
+      )}
     </React.Fragment>
   );
 };
