@@ -1,0 +1,134 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 12vh;
+  width: 60%;
+  z-index: 100;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row h4 {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.row:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__and__remove {
+  text-align: center;
+}
+
+.price__and__remove p {
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #05867e;
+  text-transform: uppercase;
+}
+
+.button {
+  border: 1px solid #05867e;
+  background-color: #05867e;
+  padding: 0.6rem 2rem;
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #379e98;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.item__name {
+  max-width: 66.6667%;
+  flex-basis: 66.6667%;
+  font-size: 1.1rem;
+}
+
+.item__name .title {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.item__name p:nth-child(2) {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.amount {
+  width: 20%;
+}
+
+.amount button {
+  border: 1px solid #05867e;
+  background-color: transparent;
+  padding: 0.3rem 0.4rem;
+  margin-right: 0.3rem;
+}
+
+.amount .disabled {
+  pointer-events: none;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.amount button:not(:nth-child(2)) {
+  cursor: pointer;
+  color: #05867e;
+  transition: 0.3s;
+}
+
+.amount button:hover:not(:nth-child(2)) {
+  background-color: #05867e;
+  color: white;
+}
+
+.amount button:nth-child(2) {
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    right: 1rem;
+    width: 40rem;
+  }
+}

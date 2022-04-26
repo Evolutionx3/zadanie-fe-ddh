@@ -22,7 +22,7 @@ section {
 }
 
 .img__box {
-  width: 25%;
+  flex-basis: 17%;
 }
 
 .img__box img {
@@ -40,7 +40,8 @@ section {
 }
 
 .details {
-  width: auto;
+  flex-basis: 60%;
+  padding: 2rem 0;
 }
 
 .desc {
@@ -78,7 +79,7 @@ section {
 }
 
 .button__box {
-  width: 35%;
+  flex-basis: 23%;
   text-align: center;
 }
 
@@ -95,4 +96,10 @@ section {
   border-radius: 6px;
   color: white;
   margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button__box button:hover {
+  background-color: #379e98;
 }

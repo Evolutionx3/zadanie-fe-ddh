@@ -16,6 +16,12 @@ nav {
   font-weight: 700;
   font-size: 1.5rem;
   color: #05867e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.title:hover {
+  color: #379e98;
 }
 
 .cart__box {

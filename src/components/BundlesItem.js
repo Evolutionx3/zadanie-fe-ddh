@@ -1,7 +1,7 @@
 import classes from "./BundlesItem.module.css";
 
-const BundlesItem = ({ props }) => {
-  const { id, title, shortDesc, img, price } = props;
+const BundlesItem = ({ item, clickHandler }) => {
+  const { id, title, shortDesc, img, price } = item;
   return (
     <div className={classes["bundles"]}>
       <div className={classes["img__box"]}>
@@ -14,7 +14,7 @@ const BundlesItem = ({ props }) => {
       </div>
       <div className={classes["button__box"]}>
         <p>{price} ZŁ</p>
-        <button>Do koszyka</button>
+        <button onClick={() => clickHandler(item)}>Do koszyka</button>
       </div>
     </div>
   );
