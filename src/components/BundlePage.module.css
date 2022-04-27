@@ -1,7 +1,15 @@
 .wrapper {
   margin: 4rem auto;
   width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+}
+
+.wrapper .back__to {
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.wrapper .back__to:hover {
+  color: #666666;
 }
