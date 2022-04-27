@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Navbar from "./components/Navbar";
 import Bundles from "./components/Bundles";
 import CartModal from "./components/CartModal";
@@ -65,34 +64,6 @@ const App = () => {
       )}
 
       <Bundles clickHandler={clickHandler} setActive={setActive} />
-      {/* {active === 1 && (
-        <BundlePage
-          clickHandler={clickHandler}
-          bundles={bundles}
-          cardIndex={1}
-        />
-      )}
-      {active === 2 && (
-        <BundlePage
-          clickHandler={clickHandler}
-          bundles={bundles}
-          cardIndex={2}
-        />
-      )}
-      {active === 3 && (
-        <BundlePage
-          clickHandler={clickHandler}
-          bundles={bundles}
-          cardIndex={3}
-        />
-      )}
-      {active === 4 && (
-        <BundlePage
-          clickHandler={clickHandler}
-          bundles={bundles}
-          cardIndex={4}
-        />
-      )} */}
     </React.Fragment>
   );
 };

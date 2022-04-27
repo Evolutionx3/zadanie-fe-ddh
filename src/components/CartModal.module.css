@@ -10,8 +10,10 @@
 
 .modal {
   position: fixed;
-  top: 12vh;
-  width: 60%;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
   z-index: 100;
   overflow: hidden;
   background-color: white;
@@ -130,5 +132,40 @@
   .modal {
     right: 1rem;
     width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 1rem;
+  }
+  .price__and__remove p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .modal {
+    padding: 1rem;
+    width: 95%;
+  }
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .price__and__remove p,
+  .remove,
+  .row:last-child p {
+    font-size: 0.8rem;
+  }
+
+  .amount {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    padding: 0.6rem;
+    font-size: 0.8rem;
   }
 }

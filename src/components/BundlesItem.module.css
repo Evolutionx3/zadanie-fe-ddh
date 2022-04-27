@@ -14,6 +14,8 @@ section {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .img__box,
@@ -102,4 +104,38 @@ section {
 
 .button__box button:hover {
   background-color: #379e98;
+}
+
+@media only screen and (max-width: 769px) {
+  section {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .button__box p {
+    font-size: 1.1rem;
+  }
+
+  .button__box button {
+    padding: 0.5rem 1.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .bundles {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .details {
+    padding: 1rem;
+  }
 }
